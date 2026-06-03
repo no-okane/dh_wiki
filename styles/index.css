@@ -263,18 +263,6 @@ h3.section-title.sub-title {
     padding-bottom: 8px;
 }
 
-/* 본문 내 이미지 스타일 (가운데 정렬 및 테두리) */
-.section-content p .content-img {
-    display: block; 
-    margin: 20px auto; 
-    border: 2px solid #bc0005; 
-    
-    /* [해결책] 모바일에서는 100%로 줄어들고, PC에서는 최대 600px까지만 커지게 제한 */
-    max-width: min(100%, 600px); 
-    
-    height: auto; 
-}
-
 /* 본문 링크 */
 .section-content p a
 { color: #0275d8;
@@ -321,6 +309,36 @@ h3.section-title.sub-title {
 .section-title.collapsed .toc-return,
 .section-title.collapsed .edit-btn { color: #8ab6d6; }
 .section-title.collapsed { border-bottom: 1px solid #eee; }
+
+
+/* =========================================
+   본문 이미지 + 하단 캡션 박스 스타일
+   ========================================= */
+.wiki-image-box {
+    display: block;
+    margin: 20px auto; /* 화면 가운데 정렬 */
+    max-width: min(100%, 600px); /* 화면이 좁아지면 100%로 알아서 줄어듦 (반응형) */
+    border: 2px solid #bc0005; /* 전체를 감싸는 테두리 */
+    box-sizing: border-box;
+}
+
+/* 박스 안의 이미지 */
+.wiki-image-box img {
+    display: block;
+    width: 100%; /* 부모 박스(위의 max-width) 크기에 꽉 차게 맞춤 */
+    height: auto; 
+}
+
+/* 하단 캡션(설명) 영역 */
+.wiki-image-box .image-caption {
+    background-color: #bc0005; /* 하단 노란색/주황색 배경 */
+    color: #fff; /* 글씨 색상 (테두리와 동일한 보라색 계열) */
+    text-align: center; /* 글씨 가운데 정렬 */
+    padding: 10px; /* 글씨 상하좌우 여백 */
+    font-weight: bold; /* 글씨 굵게 */
+    font-size: 0.95rem;
+    border-top: 2px solid #fff; /* 이미지와 박스 사이의 가로선 */
+}
 
 
 /* =========================================
