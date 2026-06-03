@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동화</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js"></script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐈‍⬛</text></svg>">
+</head>
+<body>
+    <header class="wiki-header">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt="나무위키 스타일 로고" class="logo-img"></a>
+        </div>
+    </header>
+
+    <main class="wiki-content">
+        <h1 class="document-title"><a href="#">동화</a></h1>
+        
+        <div class="last-modified">최근 수정 시각 : <time id="last-modified-time"></time></div>
+        
+        <!-- [요청 반영] 외곽 박스 처리가 될 분류 영역 -->
+        <div class="wiki-category">
+            분류: <a href="#">BL커뮤/어쩌구수</a> | <a href="#">데이트온/등장인물</a>
+        </div>
+        
+        <hr class="title-divider">
+        
+        <div class="infobox">
+            <table>
+                <tr><th colspan="2" class="info-title">동화<br>董化</th></tr>
+                <tr><td colspan="2" class="info-image"><img src="./images/profile.jpg" alt="캐릭터 이미지" style="width:100%; display:block;"></td></tr>
+                <tr><th>가명<br>(데이트 온 닉네임)</th><td>은지</td></tr>
+                <tr><th>성별</th><td>남성</td></tr>
+                <tr><th>생년월일</th><td>1999년 9월 29일<a href="#fn-1" class="footnote-link" data-id="1" data-footnote="실제 나이는 486세다.">[1]</a></td></tr>
+                <tr><th>신체</th><td>180cm | 60kg | B형 </td></tr>
+                <tr><th>상징색</th><td style="color: #bc0005;">#bc0005<br></td></tr>
+                <tr><th>가족관계</th><td>부모님, 남동생<a href="#fn-2" class="footnote-link" data-id="2" data-footnote="이름은 동백. 일란성 쌍둥이다.">[2]</a></td>
+                </tr>
+                
+                <tr class="infobox-toggle-row">
+                    <td colspan="2" id="infobox-toggle-btn">
+                        정보 더 보기<br>
+                        <span style="font-size: 1em;">[ 펼치기 · 접기 ]</span>
+                    </td>
+                </tr>
+                <tr class="infobox-hidden-row" style="display: none;"><th>종족</th><td>악마</td></tr>
+                <tr class="infobox-hidden-row" style="display: none;"><th>학력</th><td>고졸</td></tr>
+                <tr class="infobox-hidden-row" style="display: none;"><th>MBTI</th><td>ISTP</td></tr>
+                <tr class="infobox-hidden-row" style="display: none;"><th>좋아하는 음식</th><td>초콜릿, 딸기</td></tr>
+                <tr class="infobox-hidden-row" style="display: none;"><th>링크</th><td><a href="https://x.com/1_really_want_u" target="_blank"><img class="infobox-link" src="./images/x.svg"></a></td></tr>
+            </table>
+        </div>
+
+        <!-- <div class="content-text">
+            <p><strong>《힘내라! 나카무라 군!!》</strong>의 주인공.</p>
+        </div> -->
+
+        <div id="toc" class="wiki-toc">
+            <div class="toc-header" id="toc-toggle" title="목차 접기/펼치기">
+                <h2>목차</h2>
+                <svg class="toc-icon" viewBox="0 0 24 24" width="20" height="20" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <ul id="toc-list">
+                <li><a href="#s-1"><span class="toc-num">1.</span> <span class="toc-text">개요</span></a></li>
+                <li>
+                    <a href="#s-2"><span class="toc-num">2.</span> <span class="toc-text">상세</span></a>
+                    <ul class="sub-toc">
+                        <li><a href="#s-2-1"><span class="toc-num">2.1.</span> <span class="toc-text">외모</span></a></li>
+                        <li><a href="#s-2-2"><span class="toc-num">2.2.</span> <span class="toc-text">성격</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#s-3"><span class="toc-num">3.</span> <span class="toc-text">행적</span></a>
+                    <ul class="sub-toc">
+                        <li><a href="#s-3-1"><span class="toc-num">3.1.</span> <span class="toc-text">출생</span></a></li>
+                        <li><a href="#s-3-2"><span class="toc-num">3.2.</span> <span class="toc-text">청소년기</span></a></li>
+                        <li><a href="#s-3-3"><span class="toc-num">3.3.</span> <span class="toc-text">출가 후</span></a></li>
+                        <li><a href="#s-3-4"><span class="toc-num">3.4.</span> <span class="toc-text">전생</span></a></li>
+                        <li><a href="#s-3-5"><span class="toc-num">3.5.</span> <span class="toc-text">현재</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#s-4"><span class="toc-num">4.</span> <span class="toc-text">데이트 온</span></a></li>
+                <li><a href="#s-5"><span class="toc-num">5.</span> <span class="toc-text">인간관계</span></a></li>
+                <li><a href="#s-6"><span class="toc-num">6.</span> <span class="toc-text">여담</span></a></li>
+                <li>
+            </ul>
+        </div>
+
+        <section id="s-1" class="wiki-section">
+            <h2 class="section-title" title="클릭하여 문단 접기/펼치기">
+                <span class="section-toggle"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                <a href="#toc" class="toc-return">1.</a> <span class="title-text">개요</span>
+                <a href="#" class="edit-btn">[편집]</a>
+            </h2>
+            <div class="section-content">
+               <div class="wiki-quote">
+                    <div class="quote-content">
+                        어쩌고<br>
+                        저쩌고
+                    </div>
+                    <div class="quote-source">
+                        나레이션
+                    </div>
+                </div>
+                <p>어쩌고</p>
+            </div>
+        </section>
+
+        <section id="s-2" class="wiki-section">
+            <h2 class="section-title" title="클릭하여 문단 접기/펼치기">
+                <span class="section-toggle"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                <a href="#toc" class="toc-return">2.</a> <span class="title-text">특징</span>
+                <a href="#" class="edit-btn">[편집]</a>
+            </h2>
+            <div class="section-content">
+                <p>친구가 없다는 점만 빼면 평범한 고등학교 1학년. 입학식에서 처음 만난 동급생인 히로세 아이키를 짝사랑하고 있다.<br><br>문어를 매우 좋아하며, 집에서도 반려동물로 문어 '잇짱'을 키우고 있다. 다만 초등학생 때 친구들에게 이상하다는 소리를 들은 이후로는 주변 사람들에게 이 사실을 잘 밝히지 않고 있다.</p>
+                
+                <h3 id="s-2-1" class="section-title sub-title" title="클릭하여 문단 접기/펼치기">
+                    <span class="section-toggle"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    <a href="#toc" class="toc-return">2.1.</a> <span class="title-text">외모</span>
+                    <a href="#" class="edit-btn">[편집]</a>
+                </h3>
+                <div class="section-content">
+                    <p>덥수룩한 머리카락과 사백안이 특징. 작중 묘사로 보면 수수하고 무난하지만<a href="#fn-3" class="footnote-link" data-id="3" data-footnote="초반부 설정 한정"><sup>[3]</sup></a> 어딘가 음침한 인상인 듯 하다. 7화에서 피 같은 붉은 액체를 뒤집어쓰고 하수구에서 기어나오는 모습에 조폭들이 좀비인 줄 알고 기겁하며 도망갔을 정도.</p>
+                </div>
+
+                <h3 id="s-2-2" class="section-title sub-title" title="클릭하여 문단 접기/펼치기">
+                    <span class="section-toggle"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    <a href="#toc" class="toc-return">2.2.</a> <span class="title-text">성격</span>
+                    <a href="#" class="edit-btn">[편집]</a>
+                </h3>
+                <div class="section-content">
+                    <p>기본적으로 내성적이고 망상이 심한 편이나, 히로세와 관련된 일이라면 몸을 사리지 않는 엄청난 행동력을 보여준다.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="s-3" class="wiki-section">
+            <h2 class="section-title" title="클릭하여 문단 접기/펼치기">
+                <span class="section-toggle"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                <a href="#toc" class="toc-return">3.</a> <span class="title-text">행적</span>
+                <a href="#" class="edit-btn">[편집]</a>
+            </h2>
+            <div class="section-content">
+
+                <div class="spoiler-box">
+                    <div class="spoiler-title">이 문서에 <a href="#">스포일러</a>가 포함되어 있습니다.</div>
+                    <div class="spoiler-desc">이 문서가 설명하는 작품이나 인물 등에 대한 줄거리, 결말, 반전 요소 등을 직·간접적으로 포함하고 있습니다.</div>
+                </div>
+
+                <p>어쩌구 저쩌구 내용ㅇ을 쓰다</p>
+
+                <h3 id="s-3-1" class="section-title sub-title" title="클릭하여 문단 접기/펼치기">
+                    <span class="section-toggle"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    <a href="#toc" class="toc-return">3.1.</a> <span class="title-text">출생</span>
+                    <a href="#" class="edit-btn">[편집]</a>
+                </h3>
+                <div class="section-content">
+                    <p>덥수룩한 머리카락과 사백안이 특징. 작중 묘사로 보면 수수하고 무난하지만<a href="#fn-3" class="footnote-link" data-id="3" data-footnote="초반부 설정 한정"><sup>[3]</sup></a> 어딘가 음침한 인상인 듯 하다. 7화에서 피 같은 붉은 액체를 뒤집어쓰고 하수구에서 기어나오는 모습에 조폭들이 좀비인 줄 알고 기겁하며 도망갔을 정도.</p>
+                </div>
+
+                <h3 id="s-3-2" class="section-title sub-title" title="클릭하여 문단 접기/펼치기">
+                    <span class="section-toggle"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    <a href="#toc" class="toc-return">3.2.</a> <span class="title-text">청소년기</span>
+                    <a href="#" class="edit-btn">[편집]</a>
+                </h3>
+                <div class="section-content">
+                    <p>기본적으로 내성적이고 망상이 심한 편이나, 히로세와 관련된 일이라면 몸을 사리지 않는 엄청난 행동력을 보여준다.</p>
+                </div>
+
+                <h3 id="s-3-3" class="section-title sub-title" title="클릭하여 문단 접기/펼치기">
+                    <span class="section-toggle"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    <a href="#toc" class="toc-return">3.3.</a> <span class="title-text">출가 후</span>
+                    <a href="#" class="edit-btn">[편집]</a>
+                </h3>
+                <div class="section-content">
+                    <p>기본적으로 내성적이고 망상이 심한 편이나, 히로세와 관련된 일이라면 몸을 사리지 않는 엄청난 행동력을 보여준다.</p>
+                </div>
+
+                <h3 id="s-3-4" class="section-title sub-title" title="클릭하여 문단 접기/펼치기">
+                    <span class="section-toggle"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    <a href="#toc" class="toc-return">3.4.</a> <span class="title-text">전생</span>
+                    <a href="#" class="edit-btn">[편집]</a>
+                </h3>
+                <div class="section-content">
+                    <p>기본적으로 내성적이고 망상이 심한 편이나, 히로세와 관련된 일이라면 몸을 사리지 않는 엄청난 행동력을 보여준다.</p>
+                </div>
+
+                <h3 id="s-3-5" class="section-title sub-title" title="클릭하여 문단 접기/펼치기">
+                    <span class="section-toggle"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    <a href="#toc" class="toc-return">3.4.</a> <span class="title-text">현재</span>
+                    <a href="#" class="edit-btn">[편집]</a>
+                </h3>
+                <div class="section-content">
+                    <p>기본적으로 내성적이고 망상이 심한 편이나, 히로세와 관련된 일이라면 몸을 사리지 않는 엄청난 행동력을 보여준다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="s-4" class="wiki-section">
+            <h2 class="section-title" title="클릭하여 문단 접기/펼치기">
+                <span class="section-toggle"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                <a href="#toc" class="toc-return">4.</a> <span class="title-text">데이트 온</span>
+                <a href="#" class="edit-btn">[편집]</a>
+            </h2>
+            <div class="section-content">
+               <div class="wiki-quote">
+                    <div class="quote-content">
+                        [❤️개인이동해욤~~^^❤️]<br>
+                        [❤️지금 만남 보실 오빠 연락줘요~❤️]<br>
+                        [❤️라인 @c6ns61❤️]
+                    </div>
+                    <div class="quote-source">
+                        'DATE ON' 등장 첫 퍼블릭 메시지
+                    </div>
+                </div>
+                <p>본편 내내 히로세를 향한 맹목적인 애정과 폭주하는 망상을 보여주며, 독자들에게 큰 웃음과 공감을 유발하는 매력적인 캐릭터이다.</p>
+            </div>
+        </section>
+
+        <section id="s-5" class="wiki-section">
+            <h2 class="section-title" title="클릭하여 문단 접기/펼치기">
+                <span class="section-toggle"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                <a href="#toc" class="toc-return">5.</a> <span class="title-text">인간관계</span>
+                <a href="#" class="edit-btn">[편집]</a>
+            </h2>
+            <div class="section-content">
+               <div class="wiki-quote">
+                    <div class="quote-content">
+                        이 소년의 이름은 나카무라 오쿠토.<br>
+                        고교 입학식 때 히로세에게 첫눈에 반해버린 내성적인 게이다.<br>
+                        말주변이 없던 그는 교실 구석에서 히로세를 바라보기만 했지만<br>
+                        드디어 참는 데에 한계가 온 것이다!<br>
+                        <strong>'오늘이야말로 반드시 친구가 되어주마!!'</strong>
+                    </div>
+                    <div class="quote-source">
+                        1화 나레이션
+                    </div>
+                </div>
+                <p>본편 내내 히로세를 향한 맹목적인 애정과 폭주하는 망상을 보여주며, 독자들에게 큰 웃음과 공감을 유발하는 매력적인 캐릭터이다.</p>
+            </div>
+        </section>
+
+        <section id="s-6" class="wiki-section">
+            <h2 class="section-title" title="클릭하여 문단 접기/펼치기">
+                <span class="section-toggle"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                <a href="#toc" class="toc-return">6.</a> <span class="title-text">여담</span>
+                <a href="#" class="edit-btn">[편집]</a>
+            </h2>
+            <div class="section-content">
+               <div class="wiki-quote">
+                    <div class="quote-content">
+                        이 소년의 이름은 나카무라 오쿠토.<br>
+                        고교 입학식 때 히로세에게 첫눈에 반해버린 내성적인 게이다.<br>
+                        말주변이 없던 그는 교실 구석에서 히로세를 바라보기만 했지만<br>
+                        드디어 참는 데에 한계가 온 것이다!<br>
+                        <strong>'오늘이야말로 반드시 친구가 되어주마!!'</strong>
+                    </div>
+                    <div class="quote-source">
+                        1화 나레이션
+                    </div>
+                </div>
+                <p>본편 내내 히로세를 향한 맹목적인 애정과 폭주하는 망상을 보여주며, 독자들에게 큰 웃음과 공감을 유발하는 매력적인 캐릭터이다.</p>
+            </div>
+        </section>
+
+        <div class="wiki-footnotes">
+            <!-- <h3>각주</h3> -->
+            <ul>
+                <li id="fn-1"><a href="#fn-1">[1]</a> 실제 나이는 486세다.</li>
+                <li id="fn-2"><a href="#fn-2">[2]</a> 이름은 동백. 일란성 쌍둥이다.</li>
+                <li id="fn-3"><a href="#fn-3">[3]</a> 초반부 설정 한정</li>
+            </ul>
+        </div>
+    </main>
+
+    <nav class="floating-nav">
+        <button id="nav-toc" class="nav-btn standalone" aria-label="목차로 이동"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button>
+        <div class="nav-group">
+            <button id="nav-up" class="nav-btn group-item" aria-label="맨 위로"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg></button>
+            <div class="divider"></div>
+            <button id="nav-down" class="nav-btn group-item" aria-label="맨 아래로"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></button>
+        </div>
+    </nav>
+    <div id="footnote-modal" class="footnote-modal-overlay">
+        <div class="footnote-modal-content">
+            <div class="footnote-modal-text" id="footnote-modal-text"></div>
+            <button id="footnote-modal-close" class="footnote-modal-close">닫기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
