@@ -479,7 +479,7 @@ h3.section-title.sub-title {
 }
 .footnote-modal-text .fn-id { 
     color: #0275d8; /* 위키 테마에 맞게 주석 번호를 파란색으로 변경 */
-    font-weight: bold; 
+    font-weight: normal; 
     margin-right: 5px; 
 } 
 .footnote-modal-close {
