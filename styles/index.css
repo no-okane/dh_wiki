@@ -571,9 +571,9 @@ h3.section-title.sub-title {
     
     /* 목차도 가로폭 제한을 풀고 자연스럽게 배치되도록 수정 */
     .wiki-toc { 
-        display: block; 
-        width: auto; 
-        max-width: 100%; 
+        display: inline-block; 
+        width: max-content; /* 글자 폭에 딱 맞춘 크기 유지 */
+        max-width: none; /* 브라우저가 좁아져도 억지로 줄이거나 늘리지 않음 */
     }
     
     /* 플로팅 버튼 여백 축소 */
